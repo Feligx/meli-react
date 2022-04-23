@@ -17,14 +17,14 @@ const Searchbar = () => {
         };
         console.log(data);
 
-        navigate({pathname: '/items',
+        navigate({pathname: '/meli-react/items',
         search: `${createSearchParams(data)}`});
     }
 
     return (
             <header>
                 <nav className="header">
-                    <a className="header--image" href='/'>
+                    <a className="header--image" href='/meli-react'>
                         <img src={ logo }/>
                     </a>
                     <div className="header--searchbar">
