@@ -14,8 +14,8 @@ const Card = (props) => {
             <div className='card--body'>
                 {
                     (item.free_shipping==true)
-                    ?<a href={"../items/"+item.id} className='card--body__price--freeshipping'>{toCommas(item.price.amount)}</a>
-                    :<a href={"/items/"+item.id} className='card--body__price'>{toCommas(item.price.amount)}</a>
+                    ?<a href={"items/"+item.id} className='card--body__price--freeshipping'>{toCommas(item.price.amount)}</a>
+                    :<a href={"items/"+item.id} className='card--body__price'>{toCommas(item.price.amount)}</a>
                 }
                 <p className='card--body__title'>{item.title}</p>
             </div>
