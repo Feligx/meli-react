@@ -1,0 +1,30 @@
+@import './colors';
+@import './breakpoints';
+@import './details';
+
+$font: 'Proxima Nova', sans-serif;
+
+@function calculateRem($size){
+    @return ($size/16px)*1rem
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+    line-height: calculateRem($size)*1.5;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+    color: $meli-darkgray;
+}
+
+body {
+	background-color: $meli-bonewhite;
+}
+
+@import './results';
+@import './header';

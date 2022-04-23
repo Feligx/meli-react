@@ -1,0 +1,107 @@
+@import './breakpoints';
+
+.breadcrumbs {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    list-style: none;
+
+    li {
+        display: inline;
+        font-size: 14px;
+        font-weight: bold;
+        color: $meli-gray;
+    }
+
+    li+li::before {
+        content: '>';
+        font-weight: lighter;
+        margin: 0 0.5rem;
+    }
+
+    li a {
+        color: $meli-lightgray;
+        text-decoration: none;
+        font-weight: lighter;
+    }
+
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    &--body {
+        grid-column: 2/7;
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+
+        &__price {
+            color: $meli-darkgray;
+            font-size: 24px;
+            margin-bottom: 32px;
+            text-decoration: none;
+        }
+
+        &__price::before {
+            content: '$';
+            margin-right: 00.5rem;
+        }
+
+        &__price--freeshipping {
+            color: $meli-darkgray;
+            font-size: 24px;
+            margin-bottom: 32px;
+            text-decoration: none;
+        }
+
+        &__price--freeshipping::before {
+            content: '$';
+            margin-right: 00.5rem;
+        }
+        &__price--freeshipping::after{
+            content: url('@assets/ic_shipping.png');
+            margin-left: 0.5rem;
+        }
+
+        &__title {
+            font-size: 18px;
+        }
+    }
+
+    &--image {
+        width: 180px;
+        height: 180px;
+        border-radius: 4px;
+        margin: 16px;
+    }
+
+    &--state{
+        grid-column: 8/11;
+        align-self: flex-start;
+        margin-top: 32px;
+
+        span {
+            font-size: 12px;
+            color: $meli-gray;
+        }
+    }
+}
+
+hr {
+    margin: 0 32px;
+    border-style: solid;
+    border-color: $meli-bonewhite;
+
+}
