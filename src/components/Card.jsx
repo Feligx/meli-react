@@ -8,7 +8,7 @@ const Card = (props) => {
     }
     return (
         <div key={item.id} className="card">
-            <a href={"/items/"+item.id}>
+            <a href={"meli-react/items/"+item.id}>
                 <img className='card--image' src={item.picture} alt={item.title}/>
             </a>
             <div className='card--body'>
