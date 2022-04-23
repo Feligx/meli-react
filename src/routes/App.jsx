@@ -11,7 +11,7 @@ const App = ()=>{
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Searchbar/>}/>
+                <Route path='/meli-react' element={<Searchbar/>}/>
                 <Route path='/items' element={<Results/>}/>
                 <Route path='/items/:id' element={<DetailedResult/>}/>
                 <Route path='*' element={<NotFound/>}/>
