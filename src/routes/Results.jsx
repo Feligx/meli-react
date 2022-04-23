@@ -6,8 +6,8 @@ import axios from 'axios';
 import Breadcrumbs from '../components/Breadcrumbs';
 import Card from '../components/Card';
 
-const API_results = 'http://localhost:3000/api/items?q=';
-const API_categories = 'http://localhost:3000/api/categories/';
+const API_results = 'https://murmuring-springs-21967.herokuapp.com/api/items?q=';
+const API_categories = 'https://murmuring-springs-21967.herokuapp.com/api/categories/';
 
 const Results= () => {
     

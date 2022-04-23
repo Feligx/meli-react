@@ -9,13 +9,11 @@ const Searchbar = () => {
     const navigate = useNavigate();
 
     const handleSearch = (event) => {
-        //event.preventDefault();
         
         const formData = new FormData(form.current);
         const data = {
             search: formData.get('search')
         };
-        console.log(data);
 
         navigate({pathname: '/items',
         search: `${createSearchParams(data)}`});
