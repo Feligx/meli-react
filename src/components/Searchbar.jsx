@@ -9,22 +9,20 @@ const Searchbar = () => {
     const navigate = useNavigate();
 
     const handleSearch = (event) => {
-        //event.preventDefault();
         
         const formData = new FormData(form.current);
         const data = {
             search: formData.get('search')
         };
-        console.log(data);
 
-        navigate({pathname: '/meli-react/items',
+        navigate({pathname: '/items',
         search: `${createSearchParams(data)}`});
     }
 
     return (
             <header>
                 <nav className="header">
-                    <a className="header--image" href='/meli-react'>
+                    <a className="header--image" href='/'>
                         <img src={ logo }/>
                     </a>
                     <div className="header--searchbar">

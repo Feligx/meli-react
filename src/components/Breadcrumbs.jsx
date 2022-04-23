@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Breadcrumbs = (props) => {
-    console.log(props);
     const breadcrumbs = props.breadcrumbs;
     const permalinks = props.permalinks;
     return (
